@@ -23,3 +23,12 @@ def decrypt(msg, decbook):
         
     return msg
 
+if __name__ == '__main__':
+    plaintext = 'Hello python programming'
+
+    encbook, decbook = makeCodebook()
+    ciphertext = encrypt(plaintext, encbook)
+    print(ciphertext)
+
+    deciphertext = decrypt(ciphertext, decbook)
+    print(deciphertext)
