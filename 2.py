@@ -31,6 +31,8 @@ def transposition(msg, key, mode):
     msg = msg.upper()
     msg += filler
 
+    print(msg)
+
     enc_table, dec_table = parseKey(key)
 
     if mode == ENC:
